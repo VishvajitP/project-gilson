@@ -25,16 +25,16 @@ export default function Theme(colors) {
 
   return {
     primary: {
-      lighter: blue[0],
-      100: blue[1],
-      200: blue[2],
-      light: blue[3],
-      400: blue[4],
-      main: blue[5],
-      dark: blue[6],
-      700: blue[7],
-      darker: blue[8],
-      900: blue[9],
+      lighter: grey[0],
+      100: grey[1],
+      200: grey[2],
+      light: grey[3],
+      400: grey[4],
+      main: grey[5],
+      dark: grey[6],
+      700: grey[7],
+      darker: grey[8],
+      900: grey[9],
       contrastText
     },
     secondary: {
@@ -85,6 +85,19 @@ export default function Theme(colors) {
       darker: green[9],
       contrastText
     },
-    grey: greyColors
+    grey: greyColors,
+    Customblue: {
+      lighter: blue[0],
+      100: blue[1],
+      200: blue[2],
+      light: blue[3],
+      400: blue[4],
+      main: blue[5],
+      dark: blue[6],
+      700: blue[7],
+      darker: blue[8],
+      900: blue[9],
+      contrastText
+    },
   };
 }

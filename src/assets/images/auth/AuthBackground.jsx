@@ -14,7 +14,8 @@ export default function AuthBackground() {
         zIndex: -1,
         bottom: 0,
         right: 380,
-        transform: 'inherit'
+        transform: 'inherit',
+        display: {xs: 'none', lg: 'block' }
       }}
     >
       <svg width="1076" height="1024" viewBox="0 0 1076 1024" fill="none" xmlns="http://www.w3.org/2000/svg">

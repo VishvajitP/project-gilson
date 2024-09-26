@@ -29,7 +29,7 @@ const dashboard = {
       id: 'orders',
       title: 'Orders',
       type: 'item',
-      url: '/',
+      url: '/order',
       icon: icons.StickyNote2Icon,
       breadcrumbs: false
     },

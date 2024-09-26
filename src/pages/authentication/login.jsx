@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 // project import
 import AuthWrapper from './AuthWrapper';
 import AuthLogin from './auth-forms/AuthLogin';
+import Container from '@mui/material/Container';
 
 // ================================|| LOGIN ||================================ //
 

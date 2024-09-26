@@ -16,7 +16,7 @@ import InputLabel from '@mui/material/InputLabel';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-
+import { useTheme } from '@mui/material/styles';
 // third party
 import * as Yup from 'yup';
 import { Formik } from 'formik';
@@ -32,6 +32,7 @@ import FirebaseSocial from './FirebaseSocial';
 // ============================|| JWT - LOGIN ||============================ //
 
 export default function AuthLogin({ isDemo = false }) {
+  const theme = useTheme();
   const [checked, setChecked] = React.useState(false);
 
   const [showPassword, setShowPassword] = React.useState(false);
@@ -141,19 +142,11 @@ export default function AuthLogin({ isDemo = false }) {
               )}
               <Grid item xs={12}>
                 <AnimateButton>
-                  <Button sx={{bgcolor: '#000', borderRadius: '7px'}} disableElevation disabled={isSubmitting} fullWidth size="large" type="submit" variant="contained" >
+                  <Button sx={{bgcolor: 'secondary.darker', borderRadius: '7px'}} disableElevation disabled={isSubmitting} fullWidth size="large" type="submit" variant="contained" >
                     Login
                   </Button>
                 </AnimateButton>
               </Grid>
-              {/* <Grid item xs={12}>
-                <Divider>
-                  <Typography variant="caption"> Login with</Typography>
-                </Divider>
-              </Grid> */}
-              {/* <Grid item xs={12}>
-                <FirebaseSocial />
-              </Grid> */}
             </Grid>
           </form>
         )}

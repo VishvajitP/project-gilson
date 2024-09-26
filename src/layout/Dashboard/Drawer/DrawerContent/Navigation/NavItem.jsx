@@ -43,7 +43,7 @@ export default function NavItem({ item, level }) {
   }, [pathname]);
 
   const textColor = 'text.primary';
-  const iconSelectedColor = 'primary.main';
+  const iconSelectedColor = 'Customblue.main';
 
   return (
     <ListItemButton
@@ -57,15 +57,15 @@ export default function NavItem({ item, level }) {
         py: !drawerOpen && level === 1 ? 1.25 : 1,
         ...(drawerOpen && {
           '&:hover': {
-            bgcolor: 'primary.lighter'
+            bgcolor: 'Customblue.lighter'
           },
           '&.Mui-selected': {
-            bgcolor: 'primary.lighter',
-            borderRight: `2px solid ${theme.palette.primary.main}`,
+            bgcolor: 'Customblue.lighter',
+            borderRight: `2px solid ${theme.palette.Customblue.main}`,
             color: iconSelectedColor,
             '&:hover': {
               color: iconSelectedColor,
-              bgcolor: 'primary.lighter'
+              bgcolor: 'Customblue.lighter'
             }
           }
         }),
@@ -94,14 +94,14 @@ export default function NavItem({ item, level }) {
               alignItems: 'center',
               justifyContent: 'center',
               '&:hover': {
-                bgcolor: 'secondary.lighter'
+                bgcolor: 'Customblue.lighter'
               }
             }),
             ...(!drawerOpen &&
               isSelected && {
-                bgcolor: 'primary.lighter',
+                bgcolor: 'Customblue.lighter',
                 '&:hover': {
-                  bgcolor: 'primary.lighter'
+                  bgcolor: 'Customblue.lighter'
                 }
               })
           }}

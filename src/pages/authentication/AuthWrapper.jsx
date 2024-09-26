@@ -24,9 +24,8 @@ export default function AuthWrapper({ children }) {
             item
             lg={4}
             md={12}
-            // sm={1}
             container
-            justifyContent="left"
+            justifyContent={{lg: 'left', xs: 'center'}}
             alignItems="center"
             mt={-10}
             sx={{ minHeight: { xs: 'calc(100vh - 210px)', sm: 'calc(100vh - 134px)', md: 'calc(100vh - 112px)' } }}
@@ -37,7 +36,9 @@ export default function AuthWrapper({ children }) {
             item
             lg={8}
             md={12}
-            // sm={11}
+            sx={{
+              display: {xs: 'none', lg: 'block' }
+            }}            
           >
             <Stack
               height='100%'             
